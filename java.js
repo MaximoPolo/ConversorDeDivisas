@@ -47,6 +47,12 @@ document.getElementById('convertirBtn').addEventListener('click', function() {
             return tasa.nombre === "tasaARS_EUR"
         })
         resultado = monto * tasa.tasa;
+    } else if (monedaOrigen === 'EUR' && monedaDestino === 'EUR') {
+        resultado = monto 
+    }else if (monedaOrigen === 'ARS' && monedaDestino === 'ARS') {
+        resultado = monto
+    } else {
+        resultado = monto
     }
 
     document.getElementById('resultado').textContent = `Resultado: ${resultado.toFixed(2)} ${monedaDestino}`;
