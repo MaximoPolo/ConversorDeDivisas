@@ -1,0 +1,5 @@
+#Usuario, #boton {
+display: flex;
+flex-direction: column;
+}
+
